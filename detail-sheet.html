@@ -9,31 +9,37 @@
     <script src="js/dealing-sheet-manu.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <!-- <script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script> -->
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
-    <script>
-        $(document).ready(function(){
-            $("button").click(function(){
-                $("div").hide();
-            });
-        });    
-    </script>
-    <div class="header"></div>
-    <button onclick="addComponent()" style="display:block; margin-top:10px; background-color:black; color:white;">Add component</button>
+    <div id="preview-sheet"></div>
+    <!-- เป็นพื้นที่แสดงผลของสินค้าซึ่งจะมีลักษณะไมต่างกัน -->
+    <div class="detail">
 
-    <div class="field-card" id="sheet-field">
-        <div class="card-body" id="goods">
-            <h1>Chatchanart Joez Charanwattanakit</h1>
-            <p class="card-text">CMO Seekster</p>
-        </div>
+        <p id="name"></p>
+        <p id="tutor"></p>
+        <p id="price"></p>
+
+        <div id="tags"></div>
+
+        <p id="detail-goods"></p>
+    </div>
+    <div id="review">
+        <div class="card-review"></div>
+    </div>
+
+    <div id="button-buy"></div>
+    <div id="button-example"></div>
+
+    <!-- ทุกไฟล์ต้องมีสิ่งนี้มันคือบาร์ที่จะโยงไปถึงทุกหน้าหลัก -->
+    <div id="navigator-bar-buttom"> 
+        <a href="" id="home"></a>
+        <a href="" id="search-all"></a>
+        <a href="" id="my-store"></a>
+        <a href="" id="notification"></a>
+        <a href="" id="profile"></a>
     </div>
 </body>
 </html>

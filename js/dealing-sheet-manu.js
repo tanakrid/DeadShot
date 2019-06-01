@@ -7,8 +7,25 @@ function addComponent(){
     }
 }
 
-// $(document).ready(function(){
-//   $("button").click(function(){
-//     $("div").hide();
-//   });
-// });
+function test(){
+    // let para = document.createElement("p");
+    // let node = document.createTextNode("This is new.");
+
+    // let node1 = document.getElementById("goods");
+    // para.appendChild(node);
+    // let element = document.getElementById("head");
+    // element.appendChild(para);
+    // element.appendChild(node1);
+    let temp = "<div>testtesttesttset</div>";
+    let node = document.createElement("div");
+    let subNode = document.createElement("div");
+    node.appendChild()
+    let result;
+    for(let i = 0;i < 9;i++){
+        // result += temp;  
+        document.getElementById("sheet-field").innerHTML += temp;
+  
+    }
+    // document.getElementById("sheet-field").innerHTML += result;
+}
+window.onload = test;
